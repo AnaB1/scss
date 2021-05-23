@@ -1,0 +1,218 @@
+/* import */
+/* Smartphones (portrait and landscape) ----------- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */ }
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */ }
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */ }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */ }
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */ }
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */ }
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */ }
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */ }
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */ }
+
+/* Block */
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background-color: #fff; }
+
+/* Element */
+.menu__up {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 10%;
+  background-color: #a481c5; }
+
+.bem {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  background-color: #fff; }
+
+/* Modifier */
+.menu--titulo {
+  text-shadow: grey 50%;
+  font-weight: bold; }
+
+/* BEM */
+/* Bloques - Padre*/
+/* ELEMENTO - Hijo*/
+/* Modificadores */
+/* Block */
+.btn {
+  text-decoration: none;
+  color: #888;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 5px;
+  width: 250px;
+  border: 1px solid #858484; }
+
+/* Element */
+.btn__price {
+  background-color: white;
+  color: #fff;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: -10px;
+  /* realign button text padding */
+  font-weight: 600;
+  background-color: #333;
+  opacity: .4;
+  border-radius: 5px 0 0 5px; }
+
+/* Element */
+.btn__text {
+  padding: 0 10px;
+  border-radius: 0 5px 5px 0; }
+
+/* Modifier */
+.btn--big {
+  font-size: 28px;
+  padding: 10px;
+  font-weight: 400; }
+
+/* Modifier */
+.bem--titulo {
+  border-bottom: solid 1px #721f1f; }
+
+.btn--blue {
+  border-color: #0074D9;
+  color: white;
+  background-color: #0074D9; }
+
+/* Modifier */
+.btn--orange {
+  border-color: #FF4136;
+  color: white;
+  background-color: #FF4136; }
+
+/* Modifier */
+.btn--green {
+  border-color: #3D9970;
+  color: white;
+  background-color: #3D9970; }
+
+/* fin import*/
+/* VARIABLES GLOBALES */
+/* fin VARIBALES */
+* {
+  margin: 0;
+  padding: 5px; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%); }
+
+/* Anidamiento */
+ul {
+  list-style: none; }
+  ul li {
+    margin: 5px;
+    padding: 5px;
+    color: #48404b; }
+    ul li a {
+      color: #48404b;
+      font-weight: bold; }
+
+h1 {
+  font: normal 28px "Roboto", sans-serif, 100; }
+
+footer ul {
+  list-style: none;
+  display: flex; }
+
+footer li {
+  font-weight: bold;
+  color: #48404b; }
+
+h2 {
+  color: #48404b; }
+
+.caja {
+  display: center flex;
+  width: 720px;
+  height: auto; }
+
+.caja--gris {
+  background-color: #aca1a1;
+  width: 440px; }
+  .caja--gris p {
+    display: flex;
+    height: fit-content;
+    text-align: left; }
+
+.caja--2 {
+  background-color: #48404b;
+  width: 440px; }
+  .caja--2 p {
+    color: black; }
+
+/*bucles*/
+.h-1 {
+  font-size: 4rem; }
+
+.h-2 {
+  font-size: 2rem; }
+
+.h-3 {
+  font-size: 1.33333rem; }
+
+/*each*/
+.uno {
+  background-image: url("/icono/uno.jpg"); }
+
+.dos {
+  background-image: url("/icono/dos.jpg"); }
+
+.tres {
+  background-image: url("/icono/tres.jpg"); }
+
+.cuatro {
+  background-image: url("/icono/cuatro.jpg"); }
+
+/*mapas*/
+.b--Facebook {
+  background-color: #3a5795;
+  color: white; }
+
+.b--Twitter {
+  background-color: #55acee;
+  color: white; }
+
+.b--Instagram {
+  background-color: #a610c4;
+  color: white; }

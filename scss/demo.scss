@@ -1,0 +1,111 @@
+/* import */
+@import "responsive";
+@import "bem";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* fin import*/
+
+
+/* VARIABLES GLOBALES */
+$lila: rgb(72, 64, 75);
+$titulo-fuente: normal 28px 'Roboto', sans-serif, 100;
+$ancho: 720px;
+$gris: rgb(172, 161, 161);
+
+/* fin VARIBALES */
+
+
+// este comentario es de SASS
+* {margin: 0;padding: 5px;}
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #d9d9d9;
+    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+    
+  }
+  
+  
+/* Anidamiento */
+
+ul {
+    list-style: none;
+    li{
+        margin: 5px;
+        padding: 5px;
+        color: $lila;
+        a{
+            color: $lila;
+            font-weight: bold;
+        }   
+    }
+}
+
+h1 {
+    font: $titulo-fuente;
+}
+
+footer {
+    ul{
+        list-style: none;
+        display: flex;
+    }
+     li{
+         font-weight: bold;
+         color:$lila;
+     }
+}
+
+h2 {
+    color: $lila;
+}
+
+.caja {
+    display: center flex;
+    width: $ancho;
+    height: auto;
+    
+}
+.caja--gris {
+    background-color: $gris;
+    width: $ancho/2 + 80;
+    p{
+        display: flex;
+        height: fit-content;
+        text-align: left;
+    }
+}
+
+.caja--2 {
+        background-color: $lila;
+        width: $ancho/2 + 80;
+    p{
+        color: black;
+    }
+
+}
+
+/*bucles*/
+@for $i from 1 through 3 {
+    .h-#{$i} {font-size: 4rem/$i;}
+}
+
+/*each*/
+@each $icono in uno,dos,tres,cuatro{
+    .#{$icono} {
+        background-image: url('/icono/#{$icono}.jpg');
+    }
+    
+}
+
+/*mapas*/
+$redes: (
+    Facebook:#3a5795,
+    Twitter: #55acee,
+    Instagram: #a610c4
+);
+
+ @each $rrss, $colores in $redes {
+    .b--#{$rrss} {
+        background-color: $colores;
+        color: white;
+    }
+}

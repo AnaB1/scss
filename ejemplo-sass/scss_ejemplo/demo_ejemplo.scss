@@ -1,0 +1,56 @@
+/* import */
+@import "responsive_ejemplo";
+@import "bem_ejemplo";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+/* fin import*/
+/* VARIABLES GLOBALES */
+$rojo: rgb(122, 34, 34);
+$titulo-fuente: normal 28px 'Roboto', sans-serif, 100;
+
+/* fin VARIBALES */
+// este comentario es de SASS
+* {margin: 0;padding: 5px;}
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #0cbaba;
+    background-image: linear-gradient(150deg, #78a8a8 5%, #a56ea3 94%);
+    height: 100vh;
+    color: #333;
+  }
+  
+  
+/* Anidamiento */
+div {
+    width: 100%;
+    height: 300px;
+    background-color:#ccc;
+    padding: 15px;
+    p {
+        font-size: 20px;
+        color: $rojo;
+        a {
+            color: #0ab;
+            font-weight: bold;
+            font-family: monospace;
+            text-decoration: none;
+        }
+    }
+    
+}
+ul {
+    list-style: none;
+    li{
+        margin: 5px;
+        padding: 5px;
+        color: $rojo;
+        a{
+            color: $rojo;
+            font-weight: bold;
+        }   
+    }
+}
+
+h1 {
+    font: $titulo-fuente;
+}
+
